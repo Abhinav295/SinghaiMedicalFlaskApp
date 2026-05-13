@@ -1,0 +1,236 @@
+[
+    {
+        "heading": "Face Cream",
+        "description": "Moisturizing face cream suitable for all skin types.",
+        "items": [
+            {
+                "id": 1,
+                "imageUrl": "https://tiimg.tistatic.com/fp/1/007/826/himalaya-natural-glow-kesar-face-cream-pack-of-70-gram-for-all-skin-types-543.jpg",
+                "description": "Himalaya Natural Glow Kesar Face Cream",
+                "price": 94
+            },
+            {
+                "id": 2,
+                "imageUrl": "https://img.freepik.com/premium-photo/natural-organic-moisturizer-cream-mockup-scene_863013-161810.jpg",
+                "description": "Natural Organic Moisturizer Cream",
+                "price": 320
+            },
+            {
+                "id": 3,
+                "imageUrl": "https://img.freepik.com/premium-vector/green-tea-leaves-cosmetic-ads-with-shimmering-effect-3d-illustration_317396-812.jpg",
+                "description": "Green Tea Leaves Cosmetic",
+                "price": 385
+            },
+            {
+                "imageUrl": "https://medicinebhandar.com/wp-content/uploads/2022/09/png_20220918_055931_0000.png",
+                "description": "Face Fine Cream",
+                "price": "180",
+                "id": 4
+            }
+        ]
+    },
+    {
+        "heading": "Pain Relief Gel",
+        "description": "Fast-acting gel for effective pain relief.",
+        "items": [
+            {
+                "id": 1,
+                "imageUrl": "https://images.apollo247.in/pub/media/catalog/product/v/o/vol0143_1-may23_2_.jpg",
+                "description": "Volini Gel",
+                "price": 133
+            },
+            {
+                "id": 2,
+                "imageUrl": "https://th.bing.com/th/id/OPAC.Gh8qnPhVRXJlJQ474C474?w=160&h=220&c=17&dpr=1.5&pid=21.1",
+                "description": "Moov Spray",
+                "price": 170
+            },
+            {
+                "id": 3,
+                "imageUrl": "https://th.bing.com/th/id/OPAC.XWlijQTqYKEtkA474C474?w=592&h=550&o=5&dpr=1.5&pid=21.1",
+                "description": "Iodex Spray",
+                "price": 270
+            },
+            {
+                "imageUrl": "https://images.apollo247.in/pub/media/catalog/product/o/m/omn0133_1.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%20400w",
+                "description": "Omnigel Spray",
+                "price": "120",
+                "id": 4
+            }
+        ]
+    },
+    {
+        "heading": "Sexual Health Product",
+        "description": "Enhances sexual wellness and health.",
+        "items": [
+            {
+                "id": 1,
+                "imageUrl": "https://ts3.mm.bing.net/th?id=OIP.OqK7vqxwNIBb70ivy-LMjAHaJR&pid=15.1",
+                "description": "Moon Juice Herbal Suppliment",
+                "price": 999
+            },
+            {
+                "id": 2,
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0030/3929/7647/products/Shadow_FRONT_38228b24-bc7b-4f05-b7e6-c35478083c63_530x@2x.jpg?v=1541334399",
+                "description": "Power 3000 Herbs",
+                "price": 599
+            },
+            {
+                "id": 3,
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0030/3929/7647/products/Shadow_FRONT_2_614eb25d-c720-4b40-8c42-2e3c83d750ff_250x250@2x.jpg?v=1552288733",
+                "description": "Testo Powe 60",
+                "price": 699
+            }
+        ]
+    },
+    {
+        "heading": "Vitamins and Nutritional Supplements",
+        "description": "Enhances overall health and wellness.",
+        "items": [
+            {
+                "id": 1,
+                "imageUrl": "https://tse3.mm.bing.net/th/id/OIP.wyK0P_YVtvHCcIgGyZLrxAHaHa?w=230&h=220&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+                "description": "Supradyn Capsules",
+                "price": 70
+            },
+            {
+                "id": 2,
+                "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.wS3O-LbVO5F0kORqEZ_GjAHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+                "description": "Centrum Silver Tablets",
+                "price": 199
+            },
+            {
+                "id": 3,
+                "imageUrl": "https://tse1.mm.bing.net/th?q=Iron+Supplements&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247",
+                "description": "Iron Tablates",
+                "price": 159
+            },
+            {
+                "imageUrl": "https://themedihubpharma.in/wp-content/uploads/2024/05/Revital-H-Men-Multivitamin-Capsules-60-Cap-Pack.png",
+                "description": "Revital H Men Multivitamin Capsules (60 Cap Pack)",
+                "price": "540",
+                "id": 4
+            }
+        ]
+    },
+    {
+        "heading": "Baby Health Products",
+        "description": "protect and nourish their delicate skin",
+        "items": [
+            {
+                "imageUrl": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/da/cms-assets/cms/product/68c560d0-8b02-4245-bc56-287ad222ae3a.png",
+                "description": "Himalaya Baby Lotion",
+                "price": "222",
+                "id": 1
+            },
+            {
+                "imageUrl": "https://images-cdn.ubuy.co.in/635c83b78f4b0f781506fff8-johnson-39-s-baby-lotion-soap.jpg",
+                "description": "Johnson Baby Lotion bar Soap",
+                "price": "27.30",
+                "id": 2
+            },
+            {
+                "imageUrl": "https://images-static.nykaa.com/media/catalog/product/d/3/d3a5b678901138511838as__1_.jpg",
+                "description": "Himalaya Baby Soap",
+                "price": "86",
+                "id": 3
+            },
+            {
+                "imageUrl": "https://www.bbassets.com/media/uploads/p/l/261010_9-johnsons-baby-baby-powder.jpg",
+                "description": "Johnson Baby Powder",
+                "price": "122",
+                "id": 4
+            },
+            {
+                "imageUrl": "https://images-static.nykaa.com/media/catalog/product/d/3/d3a5b678901138511838as__1_.jpg",
+                "description": "Himalaya Baby Soap",
+                "price": "86",
+                "id": 5
+            },
+            {
+                "imageUrl": "https://duckduckbaby.in/cdn/shop/files/DDB6694_1.jpg?v=1713208715",
+                "description": "Many Poco Pants Diper",
+                "price": "399",
+                "id": 6
+            }
+        ]
+    },
+    {
+        "heading": "Womens Health Products",
+        "description": "a wide range of items supporting female-specific health needs, from nutritional supplements.",
+        "items": [
+            {
+                "imageUrl": "https://cdn01.pharmeasy.in/dam/products_otc/226830/prega-news-pregnancy-test-kit-1-1754294108.jpg?dim=700x0&dpr=1&q=100",
+                "description": "Prega News",
+                "price": "56.00",
+                "id": 1
+            },
+            {
+                "imageUrl": "https://herbshd.com/wp-content/uploads/2024/09/Hempushpa-Tonic-450-ml-And-Gasaram-Anti-Gastritis-Capsule-1.jpg",
+                "description": "Hempushpa Syrup ",
+                "price": "230",
+                "id": 2
+            },
+            {
+                "imageUrl": "https://m.media-amazon.com/images/I/61gSAKyqCEL._AC_UF1000,1000_QL80_.jpg",
+                "description": "Sachin Saheli",
+                "price": "549",
+                "id": 3
+            }
+        ]
+    },
+    {
+        "heading": "Health monitoring devices",
+        "description": "helps individuals track and manage their health data.",
+        "items": [
+            {
+                "imageUrl": "https://microsidd.com/cdn/shop/files/thermometerpeerless.jpg?v=1686760182.jpg",
+                "description": "Thermometer",
+                "price": "549",
+                "id": 1
+            },
+            {
+                "imageUrl": "https://www.bbassets.com/media/uploads/p/l/1200008891_3-medtech-bp-12-novacheck-bp-monitor-with-backlight.jpg",
+                "description": "Blood pressure Measurement Machine",
+                "price": "1800",
+                "id": 2
+            }
+        ]
+    },
+    {
+        "heading": "Ayurvedic/herbal and homeopathic products",
+        "description": "Ayurvedic/herbal and homeopathic products are distinct systems of alternative medicine that use natural sources to promote healing.",
+        "items": [
+            {
+                "imageUrl": "https://zanducare.com/cdn/shop/files/PetBottle_SF_1.jpg",
+                "description": "Zandu Pancharishta",
+                "price": "211",
+                "id": 1
+            },
+            {
+                "imageUrl": "https://cpimg.tistatic.com/11589437/b/4/Hajmola-Regular-Tablets..jpg",
+                "description": "Hajmola Regular Tablets",
+                "price": "60",
+                "id": 2
+            }
+        ]
+    },
+    {
+        "heading": "Oral care Products",
+        "description": "tems used for dental hygiene, including tools like toothbrushes (manual, electric) and floss.",
+        "items": [
+            {
+                "imageUrl": "https://www.quickpantry.in/cdn/shop/files/SensodyneSensitiveToothpasteFreshGel.jpg",
+                "description": "Sensodyne Sensitive Toothpaste Fresh Gel",
+                "price": "220",
+                "id": 1
+            },
+            {
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBOvjWMZTD0pU7UKpHFaQHzLNQ2c5isJT8YZ8c7h21g&s=10",
+                "description": "Colgate ",
+                "price": "123",
+                "id": 2
+            }
+        ]
+    }
+]
