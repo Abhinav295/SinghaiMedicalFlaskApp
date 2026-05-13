@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhai Medical Store</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* Contact Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .contact-form .form-group {
+            flex: 1;
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form .submit-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .contact-form .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Singhai Medical Store Logo" class="logo">
+            <h1>Singhai Medical Store</h1>
+            <p>
+                <span class="location-sign">📍</span>
+                <a href="https://maps.app.goo.gl/xvcwcha1CuakjFPw9" target="_blank" class="location-link">
+                    Samarra, Tikamgarh, Madhya Pradesh
+                </a>
+            </p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/products">Products</a></li>
+            {% if session['username'] %}
+            <li><a>{{session['username']}}</a></li>
+            <li><a href="/logout">Logout</a></li>
+            {% else %}
+            <li> <a onclick="openPopup()">Login</a></li>
+            {% endif %}
+
+        </ul>
+    </nav>
+    <main>
+        <div id="loginOverley" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+            <div class="popup">
+            <span class="close-btn" onclick = "closePopup()">&times;</span>
+            <h2>Login</h2>
+            <p>Login to access your account and manage your orders.</p>
+            <form action="/login" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+        </div>
+    </div>
+        <script>
+            function openPopup() {
+                document.getElementById("loginOverley").style.display = "flex";
+            }
+
+            function closePopup() {
+                document.getElementById("loginOverley").style.display = "none";
+            }
+        </script>
+        <section id="blogs">
+            <h2>Latest Blogs</h2>
+            <article class="blog-post">
+                <h3>Understanding Common Health Issues</h3>
+                <p>Stay informed about common health issues and how to manage them effectively.</p>
+                <a href="https://collectedmed.com/health-issues/what-are-the-most-common-health-issues/" class="read-more" target="_blank">Read More</a>
+            </article>
+            <article class="blog-post">
+                <h3>Importance of Regular Check-ups</h3>
+                <p>Learn why regular health check-ups are crucial for maintaining good health.</p>
+                <a href="https://www.medanta.org/patient-education-blog/why-regular-health-check-ups-matter" class="read-more" target="_blank">Read More</a>
+            </article>
+        </section>
+        <section>
+            <a href="https://wa.me/{{ wa_number }}?text={{ wa_message }}"
+                class="whatsapp-float"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with us on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"Excellent service and availability of medicines. The staff is very helpful and polite."</p>
+                <p><strong>- Ramesh Gupta</strong></p>
+            </div>
+            <div class="review">
+                <p>"A reliable medical store in the area. They always have what I need, and the location is convenient."</p>
+                <p><strong>- Priya Sharma</strong></p>
+            </div>
+            <div class="review">
+                <p>"The best medical store in Tikamgarh. Highly recommended for their professionalism and quality products."</p>
+                <p><strong>- Ankit Verma</strong></p>
+            </div>
+            <div class="review">
+                <p>"I Visited the Store and It was Very Beutiful and Everything was available Over there and fully facilated"</p>
+                <p><strong>- Samyak Malaiya</strong></p>
+            </div>
+            <p>Read more reviews on <a href="https://maps.app.goo.gl/xvcwcha1CuakjFPw9" target="_blank">Google Maps</a>.</p>
+        </section>
+    </main>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below to get in touch with us:</p>
+        {% if message %}
+        <div class="message-box {{ message_type }}">
+            <p>{{ message }}</p>
+        </div>
+        {% endif %}
+        <form action="/submit-query" method="POST" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Last Name:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="text" id="contact-number" name="contact_number" placeholder="Enter your contact number" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="add">Last Name:</label>
+                    <input type="add" id="add" name="add" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="query">Your Query:</label>
+                <textarea id="query" name="query" rows="4" placeholder="Ask your query here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+<p>Contact us: +91-8821920228 | Email: jsurendra104@gmail.com</p>
+        <p>Address: Samarra, Tikamgarh, Madhya Pradesh</p>
+    </footer>
+</body>
+</html>
