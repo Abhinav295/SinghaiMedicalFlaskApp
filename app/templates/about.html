@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Singhai Medical Store</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Singhai Medical Store</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/products">Products</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Who We Are</h2>
+            <p>Singhai Medical Store is a trusted pharmacy located in Samarra, Tikamgarh, Madhya Pradesh. We are committed to providing high-quality medicines and healthcare products to our customers.</p>
+        </section>
+        <section>
+            <h2>Our Journey</h2>
+            <p>Singhai Medical Store was established in 2005 by <strong>Surendra Kumar Jain</strong>. Starting with a small variety of medicines, the store has grown significantly over the years. Today, we offer a wide range of medicines and healthcare products, catering to the diverse needs of our customers. Our commitment to quality and customer satisfaction has been the cornerstone of our success.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Wide range of medicines and healthcare products</li>
+                <li>Friendly and knowledgeable staff</li>
+                <li>Convenient location for easy access</li>
+                <li>Commitment to customer satisfaction</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Accessibility</h2>
+            <ul>
+                <li>Wheelchair-accessible car park</li>
+                <li>Wheelchair-accessible entrance</li>
+                <li>Wheelchair-accessible seating</li>
+                <li>Wheelchair-accessible toilet</li>
+                <li>Assistive hearing loop</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Service Options</h2>
+            <ul>
+                <li>Delivery</li>
+                <li>Drive-through</li>
+                <li>In-store pick-up</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Amenities</h2>
+            <ul>
+                <li>Gender-neutral toilets</li>
+                <li>Wi-Fi</li>
+                <li>Free Wi-Fi</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Crowd</h2>
+            <ul>
+                <li>LGBTQ+ friendly</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Planning</h2>
+            <ul>
+                <li>Quick visit</li>
+                <li>Accepts walk-ins</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Recycling</h2>
+            <ul>
+                <li>Batteries</li>
+                <li>Light bulbs</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Payments</h2>
+            <ul>
+                <li>Credit cards</li>
+                <li>Debit cards</li>
+                <li>Google Pay</li>
+                <li>NFC mobile payments</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Children</h2>
+            <ul>
+                <li>Nursing room</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Parking</h2>
+            <ul>
+                <li>Free parking lot</li>
+                <li>Free street parking</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Visit Us</h2>
+            <p>We are located at:</p>
+            <p><strong>Samarra, Tikamgarh, Madhya Pradesh</strong></p>
+            <p>Find us on <a href="https://maps.app.goo.gl/xvcwcha1CuakjFPw9" target="_blank">Google Maps</a>.</p>
+        </section>
+        <footer id="contact">
+            <h2>Enquire Us</h2>
+            <p>Please fill out the form below to get Enquire About Products:</p>
+            <form action="/submit-query" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-number">Contact Number:</label>
+                        <input type="tel" id="contact-number" name="contact_number" placeholder="Enter your contact number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="query">Your Query:</label>
+                    <textarea id="query" name="query" rows="4" placeholder="Write your query here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <p>Contact us: +91-8821920228 | Email: jsurendra104@gmail.com</p>
+            <p>Address: Samarra, Tikamgarh, Madhya Pradesh</p>
+        </footer>
+    </main>
+</body>
+</html>
