@@ -151,7 +151,7 @@
                 document.getElementById("EditProducts").style.display = "flex";
             }
             function onChangingHeaders(element){
-                const cproducts = {{products|tojson}}
+                const cproducts = {{products|tojson}};
                 let selectedHeading = cproducts.filter(x => x.heading.includes(element.value));
                 let length= selectedHeading[0].items.length-1;
                 document.getElementById("ddescriptions").innerHTML="";

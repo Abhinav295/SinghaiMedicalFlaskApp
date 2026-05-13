@@ -104,7 +104,7 @@ def login_check(username, password):
     :return: True if credentials are valid, False otherwise.
     """
     # For simplicity, using hardcoded credentials. In a real application, use a secure method to store and verify credentials.
-    file_path = os.path.join(os.getcwd(),"mysite", "app", "static", "data", "login.json")
+    file_path = os.path.join(os.getcwd(), "app", "static", "data", "login.json")
 
     with open(file_path, 'r') as file:
         users = json.load(file)

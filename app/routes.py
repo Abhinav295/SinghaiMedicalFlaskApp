@@ -29,7 +29,7 @@ def about():
 
 @main.route('/products')
 def products():
-    with open('mysite/app/static/data/products.json', 'r') as file:
+    with open('./app/static/data/products.json', 'r') as file:
         products = json.load(file)
     if not products:
         message = "No products available at the moment."
@@ -96,7 +96,7 @@ def logout():
 def removeProducts():
     header = request.form.get("dheaders")
     description = request.form.get("ddescriptions")
-    with open('mysite/app/static/data/products.json', 'r') as file:
+    with open('./app/static/data/products.json', 'r') as file:
         products = json.load(file)
         for entry in products:
             if entry["heading"] == header :
@@ -119,7 +119,7 @@ def addProducts():
     }
 
     try:
-        with open('mysite/app/static/data/products.json', 'r+') as file:
+        with open('./app/static/data/products.json', 'r+') as file:
             products = json.load(file)
 
             for entry in products:
